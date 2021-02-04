@@ -32,18 +32,18 @@ public class History {
     }
 
     public void traverseForward(){
-        try{cur = cur.child;}
-        catch(NullPointerException e){
-            System.out.println("Handled Esception");
-            cur = leaf;
+        if(cur != null) {
+            if(cur.child != null) {
+                cur = cur.child;
+            }
         }
     }
 
     public void traverseBackward(){
-        try{cur = cur.parent;}
-        catch(NullPointerException e){
-            System.out.println("Handled Esception");
-            cur = root;
+        if(cur != null) {
+            if(cur.parent != null) {
+                cur = cur.parent;
+            }
         }
     }
 
@@ -54,5 +54,5 @@ public class History {
         return cur.name;
     }
 
-    }
+}
 
