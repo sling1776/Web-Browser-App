@@ -37,11 +37,13 @@ public class SearchBar extends LinearLayout {
         AppCompatButton backwardButton = new AppCompatButton(context);
             backwardButton.setText("<-");
             backwardButton.setLayoutParams(buttonParams);
-            backwardButton.setBackgroundColor(Color.parseColor("#7ff0fc"));
+            backwardButton.setBackgroundResource(R.drawable.button_background);
+            backwardButton.setTextColor(Color.WHITE);
         AppCompatButton forwardButton = new AppCompatButton(context);
             forwardButton.setText("->");
             forwardButton.setLayoutParams(buttonParams);
             forwardButton.setBackgroundResource(R.drawable.button_background);
+            forwardButton.setTextColor(Color.WHITE);
 
         // create search bar
         final AppCompatEditText searchBar = new AppCompatEditText(context);
@@ -51,7 +53,8 @@ public class SearchBar extends LinearLayout {
         // create go button
         AppCompatButton goButton = new AppCompatButton(context);
             goButton.setText("Go");
-            //goButton.setBackgroundColor((Color.parseColor("#7ff0fc")));
+            goButton.setBackgroundResource(R.drawable.button_background);
+            goButton.setTextColor(Color.WHITE);
 
 
 
